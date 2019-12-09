@@ -31,9 +31,7 @@
 
         </header>
         <div class="banner">
-            <a href ="Login.html">
                 <img class="image" src='assets/img/1.jpg' alt='projetos' >
-            </a>
             <p class="title">
                 Bem-vindo ao Social Commerce!!!
             </p>
@@ -42,15 +40,18 @@
             <ul class="projetos">
                 {{#each portfolio}}
                 <li class="projeto-item">
+                        
                         <img class="Projeto-img" src=./assets/img/{{this.categoria.nome}}.jpg alt={{this.categoria.nome}}>
+                        <a href = "categoria.html?id={{this.categoria.nome}}">  
+                            <p>{{this.categoria.nome}}</p> 
                         <div class="proj-content">
-                        <a href = "categoria.html?id={{this.categoria.nome}}">{{this.categoria.nome}}</a>
-                        <p>{{this.categoria.descricao}}</p>
-                    </div>
+
+                            <p>{{this.categoria.descricao}}</p>
+                        </div>
+                    </a>
                 </li>
                 {{/each}}
             </ul>
         </div>
-        {{id}}
     </body>
 </html>
