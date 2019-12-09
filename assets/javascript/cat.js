@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     coDesReplace('.projetos-1',db["portfolio"][id]["categoria"]);
     coDesReplace('.projetos',db["portfolio"][id]["categoria"])
     console.log(db["portfolio"][id]["categoria"]);
+    coDesReplace('.dropdown', db);
  
 
 });

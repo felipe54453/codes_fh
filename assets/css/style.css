@@ -71,8 +71,9 @@ body {
 }
 
 .projetos-1 {
-    width: 75%;
+    width: 92%;
     display: flex;
+    padding: 1rem;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
